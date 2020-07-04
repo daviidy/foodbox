@@ -1,0 +1,233 @@
+progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}[type=checkbox],[type=radio],legend{padding:0}[aria-disabled],html{cursor:default} figcaption, menu,article,aside,details,figure,footer,header,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0} [hidden],template{display:none}*,::after,::before{background-repeat:no-repeat;box-sizing:inherit}::after,::before{text-decoration:inherit;vertical-align:inherit}html{box-sizing:border-box;font-family:sans-serif;line-height:1.5;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}small,sub,sup{font-size:83.3333%}hr{height:0}nav ol,nav ul{list-style:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}audio,canvas,iframe,img,svg,video{vertical-align:middle}img{border-style:none}svg{fill:currentColor}svg:not(:root){overflow:hidden}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:hover{outline-width:0}table{border-collapse:collapse;border-spacing:0}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit;font-size:1em;margin:0}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{display:table;max-width:100%;white-space:normal}textarea{overflow:auto;resize:vertical}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-cancel-button,::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[tabindex],a,area,button,input,label,select,textarea{-ms-touch-action:manipulation;touch-action:manipulation}[hidden][aria-hidden=false]{clip:rect(0,0,0,0);display:inherit;position:absolute}[hidden][aria-hidden=false]:focus{clip:auto}/*# sourceMappingURL=sanitize.min.css.map */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: lighter;
+}
+.connexionBox {
+	background-color: #eceff1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.connexion {
+	max-width: 500px;
+	font-size: 24px;
+}
+.connexion > * {
+	width: 100%;
+}
+.connexion > h1{
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+	color: #1d1d1d;
+}
+.connexion > input {
+	box-sizing: border-box;
+	font-size: 24px;
+	padding: 5px;
+	border: 5px solid #F44336;
+	background-color: #fff;
+	border-width: 0 0 5px 0;
+	outline: none;
+}
+button {
+	font-size: 20px;
+	border: none;
+	color: white;
+	background-color: #F44336;
+	margin-top: 10px;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+button:disabled {
+	background-color: #eceff1;
+	cursor:not-allowed;
+	color: white;
+}
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Roboto', sans-serif;
+	color: #212121;
+	/*border: 5px solid purple;*/
+}
+
+.box > * {
+	/*border: 5px solid red;*/
+	flex: 1 1 100vw;
+}
+
+header {
+	text-align: center;
+	background-color: #F44336;
+	color: white;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	margin-bottom: 5px;
+	padding: 10px 20px;
+}
+header h1 {
+	margin: 0;
+	text-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	flex: 0 1 500px;
+	min-height: 500px;
+	/*border: 5px solid lightblue;*/
+	margin: 20px 15px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	border-radius: 2px;
+}
+
+.image {
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 2px 2px 0 0;
+}
+.image img {
+	width: 100%;
+	transform: translateY(-25%);
+}
+
+.recette {
+	padding: 0 20px;
+}
+.recette .liste-ingredients {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 5px 20px;
+	background-color: #F5F5F5;
+	transform: scale(1.12);
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+.recette .liste-ingredients li {
+	margin-left: 20px;
+	margin-right: 5px;
+}
+.recette ol {
+	padding: 10px 0px 10px 20px;
+}
+.recette ol li {
+	margin-bottom: 10px;
+}
+
+
+@media all and (max-width:500px) {
+	
+	h1 {
+		font-size: 1.3em;
+	}
+	.card {
+		margin: 0px;
+	}
+	header {
+		margin: 0;
+	}
+}
+
+/*
+	FOOTER
+*/
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: #eceff1;
+	padding: 0 0 10px 0;
+	box-shadow: 0px -3px 5px rgba(0,0,0,0.2);
+	width: 100%;
+}
+
+/* ----------------------------
+	NotFound
+---------------------------- */
+
+.notFound {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	background: #eceff1;
+}
+
+/* ----------------------------
+	Admin
+---------------------------- */
+
+/*.admin {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 5px solid red;
+}
+
+.admin > * {
+	flex: 0 1 500px;
+	border: 5px solid lightblue;
+	margin: 20px 15px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	border-radius: 2px;
+}*/
+
+.admin-form > * {
+	width: 100%;
+	font-size: 18px;
+	padding: 5px;
+	border: 5px solid #69F0AE;
+	border-width: 1px 1px 5px 1px;
+	outline: none;
+	margin-bottom: 5px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.card > button {
+	width: 100%;
+	background: #69F0AE;
+}
+
+.ajouter-recette > * {
+	border: 5px solid #F44336;
+	border-width: 1px 1px 5px 1px;
+}
+
+/* ----------------------------
+	Login
+---------------------------- */
+
+.login {
+	padding: 5px;
+	text-align: center;
+	max-width: 500px;
+	margin: auto;
+}
+
+.login > * {
+	width: 100%;
+	
+	margin: 0 auto 20px auto;
+}
+
+.facebook-button {
+	background-color: #3b5998;
+}
+
+.twitter-button {
+	background-color: #00aced;
+}
+
+
