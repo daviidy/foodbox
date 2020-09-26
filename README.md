@@ -1,3 +1,43 @@
+# FoodBox
+
+![screenshot](./public/screenshot_foodbox.png)
+
+This project consists of building an app for food recipes. Users can perform CRUD actions on food recipes.
+They can authenticate via facebook login.
+
+
+## Built With
+
+- HTML
+- CSS
+- ReactJS
+- Firebase
+
+## Live Demo
+
+[Live Demo Link](https://foodbox.netlify.app/)
+
+## Authors
+
+👤 **David YAO**
+
+- GitHub: [@daviidy](https://github.com/daviidy)
+- Twitter: [@davidyao3](https://twitter.com/DavidYao3)
+- LinkedIn: [@daviidy](https://www.linkedin.com/in/david-yao-6bb95299/)
+- Personal Website: [@daviidy](http://david-yao.com)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
